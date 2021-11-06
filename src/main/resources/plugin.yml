@@ -1,11 +1,11 @@
 name: TradeMeGemsAddon
 main: me.drkmatr1984.TradeMeGemsAddon.TradeMeGemsAddon
-version: 1.0
+version: 1.1
 author: DrkMatr1984
-description: Allows the user to use Gems from ElementalGems or MinevoltGems as currency in TradeMe by Zrips
+description: Allows the user to use Gems from ElementalGems,MinevoltGems, or UGems as currency in TradeMe by Zrips
 depend: [TradeMe]
-softdepend: [MinevoltGems, ElementalGems]
+softdepend: [MinevoltGems, ElementalGems, UGems]
 permissions:
     trademe.gemstrade:
-        description: Allows the user to use Gems from ElementalGems or MinevoltGems as currency in TradeMe by Zrips
+        description: Allows the user to use Gems from ElementalGems,MinevoltGems, or UGems as currency in TradeMe by Zrips
         default: true

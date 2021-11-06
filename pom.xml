@@ -5,7 +5,7 @@
 
     <groupId>me.drkmatr1984</groupId>
     <artifactId>TradeMeGemsAddon</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <name>TradeMeGemsAddon</name>
 
     <!-- Properties -->
@@ -40,10 +40,18 @@
             <systemPath>${project.basedir}/lib/TradeMe6.1.0.4.jar</systemPath>
         </dependency>
         <dependency>
+            <groupId>me.ulrich</groupId>
+            <artifactId>gems</artifactId>
+            <version>2.0.9</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/UGems-2.0.9.jar</systemPath>
+        </dependency>
+        <dependency>
             <groupId>me.elementalgaming</groupId>
             <artifactId>ElementalGemsAPI</artifactId>
-            <version>1.0</version>
+            <version>1.1</version>
         </dependency>
+        
         <dependency>
             <groupId>me.drkmatr1984</groupId>
             <artifactId>MinevoltGems</artifactId>

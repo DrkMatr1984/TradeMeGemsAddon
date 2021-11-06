@@ -55,8 +55,8 @@ public class TradeMeGemsAddon extends JavaPlugin {
       }
       
     	
-      TradeAction tradeAction = new TradeAction(getCurrencyName(), AmountClickAction.Amounts, false);	
-	  TradeMe.getInstance().addNewTradeMode(tradeAction, new Gems(TradeMe.getInstance(), getCurrencyName()));
+      TradeAction tradeAction = new TradeAction("Gems", AmountClickAction.Amounts, false);	
+	  TradeMe.getInstance().addNewTradeMode(tradeAction, new Gems(TradeMe.getInstance(), "Gems"));
 	
 	  // Reloads TradeMe config files to implement new trade mode
 	  TradeMe.getInstance().getConfigManager().reload();

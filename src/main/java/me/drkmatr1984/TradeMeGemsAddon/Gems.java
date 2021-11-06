@@ -41,28 +41,28 @@ public class Gems implements TradeModeInterface {
     @Override
     public HashMap<String, Object> getLocale() {
 	HashMap<String, Object> map = new HashMap<String, Object>();
-	map.put("Button.Name", at + " increment by &6[amount]");
+	map.put("Button.Name", TradeMeGemsAddon.getCurrencyName() + " increment by &6[amount]");
 	map.put("Button.Lore", Arrays.asList(
 	    "&eLeft click to add",
 	    "&eRight click to take",
 	    "&eHold shift to increase 10 times",
 	    "&eMaximum available: &6[balance]",
-	    "&eCurrent " + at + " offer: &6[offer] [taxes]"));
-	map.put("ToggleButton.Name", "&2Toggle to Gem offer");
-	map.put("ToggleButton.Lore", Arrays.asList("&eCurrent " + at + " offer: &6[amount] [taxes]"));
-	map.put("OfferedButton.Name", "&2[player]'s " + at + " offer");
-	map.put("OfferedButton.Lore", Arrays.asList("&eCurrent "+ at +" offer: &6[amount] [taxes]"));
-	map.put("Error", "&e[playername] doesn't have enough " + at);
-	map.put("Limit", "&eYou dont have enough " + at + "! Amount was set to maximum you can trade: &6[amount]");
-	map.put("hardLimit", "&6[playername] &ecan't have more than 10,000,000,000,000 " + at + "!");
-	map.put("InLoanTarget", "&eYour offered " + at + " amount is to low to get &6[playername] &eout of loan! offer atleast &6[amount]");
-	map.put("InLoanYou", "&6[playername] &eoffered " + at + " amount is to low to get you out of loan!");
-	map.put("Got", "&eYou have received &6[amount] " + at);
-	map.put("CantWithdraw", "&cCan't withdraw " + at + " from player! ([playername])");
-	map.put("ChangedOffer", "&6[playername] &ehas changed their " + at + " offer to: &6[amount]");
-	map.put("ChangedOfferTitle", "&8Offered &0[amount] " + at);
+	    "&eCurrent " + TradeMeGemsAddon.getCurrencyName() + " offer: &6[offer] [taxes]"));
+	map.put("ToggleButton.Name", "&2Toggle to " + TradeMeGemsAddon.getCurrencyName() + " offer");
+	map.put("ToggleButton.Lore", Arrays.asList("&eCurrent " + TradeMeGemsAddon.getCurrencyName() + " offer: &6[amount] [taxes]"));
+	map.put("OfferedButton.Name", "&2[player]'s " + TradeMeGemsAddon.getCurrencyName() + " offer");
+	map.put("OfferedButton.Lore", Arrays.asList("&eCurrent "+ TradeMeGemsAddon.getCurrencyName() +" offer: &6[amount] [taxes]"));
+	map.put("Error", "&e[playername] doesn't have enough " + TradeMeGemsAddon.getCurrencyName());
+	map.put("Limit", "&eYou dont have enough " + TradeMeGemsAddon.getCurrencyName() + "! Amount was set to maximum you can trade: &6[amount]");
+	map.put("hardLimit", "&6[playername] &ecan't have more than 10,000,000,000,000 " + TradeMeGemsAddon.getCurrencyName() + "!");
+	map.put("InLoanTarget", "&eYour offered " + TradeMeGemsAddon.getCurrencyName() + " amount is to low to get &6[playername] &eout of loan! offer atleast &6[amount]");
+	map.put("InLoanYou", "&6[playername] &eoffered " + TradeMeGemsAddon.getCurrencyName() + " amount is to low to get you out of loan!");
+	map.put("Got", "&eYou have received &6[amount] " + TradeMeGemsAddon.getCurrencyName());
+	map.put("CantWithdraw", "&cCan't withdraw " + TradeMeGemsAddon.getCurrencyName() + " from player! ([playername])");
+	map.put("ChangedOffer", "&6[playername] &ehas changed their " + TradeMeGemsAddon.getCurrencyName() + " offer to: &6[amount]");
+	map.put("ChangedOfferTitle", "&8Offered &0[amount] " + TradeMeGemsAddon.getCurrencyName());
 
-	map.put("log", "&e[amount] " + at);
+	map.put("log", "&e[amount] " + TradeMeGemsAddon.getCurrencyName());
 	return map;
     }
 
